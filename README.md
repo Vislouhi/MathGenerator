@@ -6,7 +6,7 @@ https://github.com/Vislouhi/MathGenerator/tree/master/mathGenerator
 
 Необходимо расширить набор случайных задач.
 
-Кодовые строки для генерации задач лежат здесь:
+Готовые кодовые строки для генерации задач лежат здесь:
 
 https://github.com/Vislouhi/MathGenerator/blob/master/mathGenerator/assets/js/tasks.js
 
@@ -14,9 +14,7 @@ https://github.com/Vislouhi/MathGenerator/blob/master/mathGenerator/assets/js/ta
 
 В $w1,магазине,сарае,гараже,...$ было $v1,1,2,3,...$ мешка с $w2,картошкой,морковкой,луком,...$. Из него забрали $v2,1,2,3,...$ мешков с $w2$.Сколко мешков осталось в $w1$?
 
-Пример строки для генерации вариантов ответов:
 
-D1=v1+v2,D2=v1-v3.
 
 Формат строки:
 

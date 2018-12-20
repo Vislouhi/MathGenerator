@@ -1,0 +1,348 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!---<link rel="icon" href="../../favicon.ico">-->
+
+    <title>5+</title>
+
+    <!-- BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- Drawer CSS -->
+    <link rel="stylesheet" href="vendor/css/drawer.min.css">
+    <!-- Fontello CSS -->
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <!-- form -->
+    <div class="top_menu sticky-top"> 
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">5+
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link top_menu_icons" href="#"><i class="icon-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top_menu_icons" href="#"><i class="icon-dots"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+  <div class="container">
+    <div class="testing">
+
+      <div class="card-group">
+        <div class="card justify-content-center">
+          <div class="card-body">
+            <div id="taskText">
+
+            </div>      
+          </div>
+        </div>
+		<script>
+		for (var i = 0; i <3; i++) {
+        var	g='<div class="card justify-content-center">';
+          g+='<div class="card-body">';
+		  g+='<h5 class="aBox">Действие '+(i+1)+'</h5>';
+            g+='<div class="form-check">';
+              g+='<input class="form-check-input" type="radio" id="rb'+(i+1)+'1" name="answerBox'+(i+1)+'" type="radio"  value="a1" checked>';
+              g+='<label class="form-check-label" id="Lrb'+(i+1)+'1">';
+              g+='</label>';
+            g+='</input>';
+          g+='</div>';
+          g+='<div class="form-check">';
+            g+='<input class="form-check-input" type="radio" id="rb'+(i+1)+'2" name="answerBox'+(i+1)+'" type="radio"  value="a2">';
+            g+='<label class="form-check-label" id="Lrb'+(i+1)+'2">';
+            g+='</label>';
+          g+='</input>';
+        g+='</div>';
+        g+='<div class="form-check">';
+          g+='<input class="form-check-input" type="radio" id="rb'+(i+1)+'3" name="answerBox'+(i+1)+'" type="radio"  value="a3">';
+          g+='<label class="form-check-label" id="Lrb'+(i+1)+'3">';
+          g+='</label>';
+        g+='</input>';
+      g+='</div>';
+      g+='<div class="form-check">';
+        g+='<input class="form-check-input" type="radio" id="rb'+(i+1)+'4" name="answerBox'+(i+1)+'" type="radio"  value="a4">';
+        g+='<label class="form-check-label" id="Lrb'+(i+1)+'4">';
+        g+='</label>';
+      g+='</input>';
+    g+='</div>';
+	g+='</div>';
+	g+='</div>';
+	document.writeln(g);
+}
+</script>
+  
+      <button type="button" class="btn btn-dark" id="check">Проверка</button>
+
+    <button type="button" class="btn btn-dark float-right" id="next">Далее</button>
+  
+  </div>      
+  </div>
+
+  </div>  
+
+  <!-- -->
+  <div class="footer fixed-bottom">
+    <div class="container-fluid">
+      <ul class="nav justify-content-between centered">
+        <li class="nav-item">
+          <a class="nav-link" href="cabinet.html"><i class="icon-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html"><i class="icon-settings"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.html"><i class="icon-logout"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JS-->
+  <script src="vendor/js/bootstrap.min.js"></script>
+
+  <!-- TESTING CORES -->
+  <script src="assets/js/global.js"></script>
+
+  <script src="assets/js/tasks.js"></script>
+
+  <script src="assets/js/answer.js"></script>
+<script>
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+//Функция преобразования кодовой строки задачи в текст задачи
+function compileTaskString(taskString)
+{
+    
+    function getRandomInt(min, max) {
+              return Math.floor(Math.random() * (max - min)) + min;
+          }
+          var str =taskString;
+          var strOut = "";
+         
+          var w1ri=0;var w2ri=0;var w3ri=0; var w4ri=0; var w5ri=0;
+		  var v1ri=0;var v2ri=0;var v3ri=0; var v4ri=0; var v5ri=0;
+		  
+		  
+		  
+          str.split('$').forEach(function callback(currentValue, index, array) {
+            
+          if (index&1){
+          
+            currentValue.split(',').forEach(function callback(currentValue, index, array) {
+            if (currentValue.localeCompare("w1") == 0) {if (w1ri==0){w1ri=getRandomInt(1, array.length);strOut+=array[w1ri];}else{strOut+=array[w1ri];}}
+			if (currentValue.localeCompare("w2") == 0) {if (w2ri==0){w2ri=getRandomInt(1, array.length);strOut+=array[w2ri];}else{strOut+=array[w2ri];}}
+			if (currentValue.localeCompare("w3") == 0) {if (w3ri==0){w3ri=getRandomInt(1, array.length);strOut+=array[w3ri];}else{strOut+=array[w3ri];}}
+			if (currentValue.localeCompare("w4") == 0) {if (w4ri==0){w4ri=getRandomInt(1, array.length);strOut+=array[w4ri];}else{strOut+=array[w4ri];}}
+			if (currentValue.localeCompare("w5") == 0) {if (w5ri==0){w5ri=getRandomInt(1, array.length);strOut+=array[w5ri];}else{strOut+=array[w5ri];}}
+			 
+			if (currentValue.localeCompare("v1") == 0) {if (v1ri==0){v1ri=getRandomInt(1, array.length);strOut+=array[v1ri];}else{strOut+=array[v1ri];}}
+			if (currentValue.localeCompare("v2") == 0) {if (v2ri==0){v2ri=getRandomInt(1, array.length);strOut+=array[v2ri];}else{strOut+=array[v2ri];}}
+			if (currentValue.localeCompare("v3") == 0) {if (v3ri==0){v3ri=getRandomInt(1, array.length);strOut+=array[v3ri];}else{strOut+=array[v3ri];}}
+            if (currentValue.localeCompare("v4") == 0) {if (v4ri==0){v4ri=getRandomInt(1, array.length);strOut+=array[v4ri];}else{strOut+=array[v4ri];}}
+			if (currentValue.localeCompare("v5") == 0) {if (v5ri==0){v5ri=getRandomInt(1, array.length);strOut+=array[v5ri];}else{strOut+=array[v5ri];}}
+			
+			});
+         
+					}else{strOut+=currentValue;
+         }
+																				});
+		  
+      
+	  str=strOut;
+      strOut=" ";
+      var val;          
+	    str.split('|').forEach(function callback(currentValue, index, array) {
+            
+      if (index&1){
+          currentValue.split('#').forEach(function callback(currentValue, index, array) {
+          if (index==0)
+          {
+              val=parseInt(currentValue);
+              if (val!=0){
+                  strOut+=currentValue.split('_')[0];
+              }
+           }
+           if (index==1){
+              if (val==1){
+				  strOut+=currentValue.split('_')[0];
+			  }
+			  if ((val>=5)||(val==0)){
+                  strOut+=currentValue.split('_')[1];
+              }
+          if ((val>=2) && (val<=4)){
+                  strOut+=currentValue.split('_')[2];
+          }
+        }
+        });
+       }else {strOut+=currentValue+" ";}
+		});
+	
+		
+	 
+    //document.writeln(strOut);
+  return strOut;
+}
+//Функция преобразования кодовой строки ответа задачи в текст ответа задачи
+function compileAnswerString(answerString)
+{
+  return answerString;
+}
+//Выбор номера задачи случайным образом
+var randomTaskNumber = getRandomInt(0, T1.length);
+//Элемент содержащий текст задачи
+var taskText = document.getElementById('taskText');
+taskText.innerHTML = compileTaskString(T3[randomTaskNumber]); 
+//Правильный ответ и его позиция задаются случайным образом
+var trueAnswer1=compileAnswerString(O3[randomTaskNumber]);
+var trueAnswerPosition1=getRandomInt(0, 4);
+
+var trueAnswer2=compileAnswerString(O3[randomTaskNumber]);
+var trueAnswerPosition2=getRandomInt(0, 4);
+
+var trueAnswer3=compileAnswerString(O3[randomTaskNumber]);
+var trueAnswerPosition3=getRandomInt(0, 4);
+//Массив элементов для первого блока ответов
+//Массив ответов заполняется пустышками
+var answers1 = ["e","e","e","e"];
+//Кнопка "Проверка"
+var checkButton = document.getElementById('check');
+//Кнопка "Далее"
+var nextButton = document.getElementById('next');
+//Массив элементов с вариантами ответов
+var radios1 = document.getElementsByName('answerBox1');
+//Заполнение массива элементов с вариантами ответов
+makeAnswers(trueAnswer1,trueAnswerPosition1,5,15,3,8,10,20,radios1); 
+
+var radios2 = document.getElementsByName('answerBox2');
+//Заполнение массива элементов с вариантами ответов
+makeAnswers(trueAnswer2,trueAnswerPosition2,5,15,3,8,10,20,radios2); 
+
+var radios3 = document.getElementsByName('answerBox3');
+//Заполнение массива элементов с вариантами ответов
+makeAnswers(trueAnswer3,trueAnswerPosition3,5,15,3,8,10,20,radios3); 
+//Функция заполняет форму со списком ответов
+//true_Answer - правильный ответ
+//true_AnswerPosition - позиция правильного ответа
+//Вид ответа a1+a2=a3
+//[min1,max1] - диапазон значений a1
+function makeAnswers(true_Answer,true_AnswerPosition,min1,max1,min2,max2,min3,max3,radios)
+{
+  //Массив ответов заполняется пустышками
+  answers1 = ["e","e","e","e"];
+  for ( var i = 0; i < 4; i++) {
+    //Выбор не занятой позиции для неправильного ответа случайным образом
+    do{
+      var randomPosition = getRandomInt(0, 4);
+    }while(answers1[randomPosition].charAt(0)!="e");
+  
+    //Генерация случайного ответа
+    answers1[randomPosition]=getRandomInt(min1, max1)+"+"+getRandomInt(min2, max2)+"="+getRandomInt(min3, max3);
+  }
+  //Запись правильного ответа
+  answers1[true_AnswerPosition]=true_Answer;
+  //Цикл по всем элементам массива и запись в них списка ответов
+  for ( var i = 0; i < radios.length; i++) {
+    document.getElementById('L'+radios[i].id).innerHTML=answers1[i];
+  }
+}
+//Функция, которая выполняется при нажатии кнопки "Проверка"
+var checkFunc = function(){
+	//Удаление прослушивателей нажатий на кнопку "Проверка"
+	checkButton.removeEventListener("click", checkFunc);
+	checkButton.removeEventListener("touchstart", checkFunc);
+	//Назначение прослушивателей нажатий на кнопку "Далее"
+	nextButton.addEventListener("click", nextFunc);
+    nextButton.addEventListener("touchstart", nextFunc);
+    //Перебор всех элементов с ответами
+	for ( var i = 0; i < radios1.length; i++) {
+      //Выбор отмеченного элемента
+	  if(radios1[i].checked) {
+		//Добавление пометки к выбранному ответу
+		if (i==trueAnswerPosition1){
+	      document.getElementById('L'+radios1[i].id).innerHTML+=' - Верно.';
+		}else{
+		 document.getElementById('L'+radios1[trueAnswerPosition1].id).innerHTML+=' - Верно.';
+		 document.getElementById('L'+radios1[i].id).innerHTML+=' - Неверно.';
+		}
+		break;
+		
+      }
+   }
+   	for ( var i = 0; i < radios2.length; i++) {
+      //Выбор отмеченного элемента
+	  if(radios2[i].checked) {
+		//Добавление пометки к выбранному ответу
+		if (i==trueAnswerPosition2){
+	      document.getElementById('L'+radios2[i].id).innerHTML+=' - Верно.';
+		}else{
+		 document.getElementById('L'+radios2[trueAnswerPosition2].id).innerHTML+=' - Верно.';
+		 document.getElementById('L'+radios2[i].id).innerHTML+=' - Неверно.';
+		}
+		break;
+		
+      }
+   }
+   	for ( var i = 0; i < radios3.length; i++) {
+      //Выбор отмеченного элемента
+	  if(radios3[i].checked) {
+		//Добавление пометки к выбранному ответу
+		if (i==trueAnswerPosition3){
+	      document.getElementById('L'+radios3[i].id).innerHTML+=' - Верно.';
+		}else{
+		 document.getElementById('L'+radios3[trueAnswerPosition3].id).innerHTML+=' - Верно.';
+		 document.getElementById('L'+radios3[i].id).innerHTML+=' - Неверно.';
+		}
+		break;
+		
+      }
+   }
+  }
+  
+//Функция, которая выполняется при нажатии кнопки "Проверка"  
+var nextFunc = function(){
+    randomTaskNumber = getRandomInt(0, T1.length);
+	//Запись нового текста задачи, выбранного слкчайным образом
+	taskText.innerHTML = compileTaskString(T1[randomTaskNumber]);
+	//Запись нового правильного ответа
+	trueAnswer=compileAnswerString(O1[randomTaskNumber]);
+	//Генерация новой позиции
+    trueAnswerPosition=getRandomInt(0, 4);
+	//Запись новых отвтетов в форму
+	makeAnswers(trueAnswer,trueAnswerPosition,5,15,3,8,10,20); 
+	
+	//Удаление прослушивателей нажатий на кнопку "Далее"
+	nextButton.removeEventListener("click", nextFunc);
+	nextButton.removeEventListener("touchstart", nextFunc);
+	//Создание прослушивателей нажатия кнопки "Проверка"
+    checkButton.addEventListener("click", checkFunc);
+    checkButton.addEventListener("touchstart", checkFunc);
+	
+	
+	
+}
+//Создание прослушивателей нажатия кнопки "Проверка"
+checkButton.addEventListener("click", checkFunc);
+checkButton.addEventListener("touchstart", checkFunc);
+</script>
+  </body>
+  </html>

@@ -1,0 +1,7 @@
+
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-settings:before { content: '\e801'; } /* '' */
+.icon-logout:before { content: '\e802'; } /* '' */
+.icon-dots:before { content: '\e803'; } /* '' */
+.icon-search:before { content: '\e804'; } /* '' */
+.icon-goback:before { content: '\e805'; } /* '' */

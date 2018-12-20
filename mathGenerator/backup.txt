@@ -1,0 +1,110 @@
+<div class="top_menu sticky-top">	
+		<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">5+
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link top_menu_icons" href="#"><i class="icon-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top_menu_icons" href="#"><i class="icon-dots"></i></a>
+            </li>
+          </ul>
+        </nav>
+		  </div>
+    </div>
+  </div>
+
+
+
+              <div class="progress-pie-chart" data-percent="94">
+            <div class="ppc-progress">
+              <div class="ppc-progress-fill"></div>
+            </div>
+            <div class="ppc-percents">
+              <div class="pcc-percents-wrapper">
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="container"></div>
+
+
+
+
+
+
+BASIC CONSTRUCT
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!---<link rel="icon" href="../../favicon.ico">-->
+
+  <title>5+</title>
+
+  <!-- BOOTSTRAP CSS-->
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <!-- Drawer CSS -->
+  <link rel="stylesheet" href="vendor/css/drawer.min.css">
+  <!-- Fontello CSS -->
+  <link rel="stylesheet" href="assets/css/fontello.css">
+  <!-- MAIN CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <!-- -->
+  <div class="top_menu sticky-top"> 
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">5+
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link top_menu_icons" href="#"><i class="icon-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top_menu_icons" href="#"><i class="icon-dots"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -->
+  <div class="footer fixed-bottom">
+    <div class="container-fluid">
+      <ul class="nav justify-content-between centered">
+        <li class="nav-item">
+          <a class="nav-link" href="cabinet.html"><i class="icon-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html"><i class="icon-settings"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.html"><i class="icon-logout"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- BOOTSTRAP JS-->
+<script src="vendor/js/bootstrap.min.js"></script>
+</body>
+</html>

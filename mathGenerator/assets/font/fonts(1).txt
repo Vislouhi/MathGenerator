@@ -1,0 +1,6 @@
+user
+settings
+logout
+search
+dots (dot)
+goback (arrow)
